@@ -1,3 +1,12 @@
+/**
+    Name: Benton Le
+    Student#: 301174103
+    Date: 10/27/2022
+    Professor: Thiago Vitor De Castilho
+    Assignment: Midterm
+    Course: COMP229-402
+**/
+
 // define the book model
 import books from '../models/books.js';
 import booksModel from '../models/books.js';
