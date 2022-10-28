@@ -59,8 +59,7 @@ export function processEditPage(req, res, next) {
     
     let id = req.params.id;
     
-    let newBook = booksModel({
-        _id: req.body.id,
+    let newBook = ({
         name: req.body.name,
         author: req.body.author,
         published: req.body.published,
@@ -75,6 +74,9 @@ export function processEditPage(req, res, next) {
         };
         res.redirect('/books/list');
     });
+    booksModel.updateOne({_id: id}, newBook, (err, Book) => {
+
+    })
 }
 
 // GET - process the delete by user id
